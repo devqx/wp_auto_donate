@@ -41,7 +41,7 @@ class Users {
         $mponzi_users_tbl = $this->model->mponzi_users;
 
         //give the payment to a receiver due to collect 
-
+        /*
         $due_receiver = "SELECT * FROM $receivers_tbl ORDER BY created_at DESC LIMIT 1";
         $receiver_query = $wpdb->get_results($due_receiver, ARRAY_A);
         foreach($receiver_query as $receiver_details){
@@ -68,7 +68,7 @@ class Users {
                 break;
 
             }
-
+            */
 
         //get the donators details
         $donator_details = "SELECT * FROM $donators_tbl WHERE user_login='$paid_user' ";
